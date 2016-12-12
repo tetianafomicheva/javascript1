@@ -24,9 +24,20 @@
 //var result = getAge(age);
 //document.write(result);
 //∀x≥0,Math.sqrt(x)=x=the unique y≥0such that y2=x
-var a = Math.sqrt(0);
-var x = Math.sqrt(Number)
-if number>0;
-var y = Nan
-if y<0
-document.write(result)
+
+    function equation() { 
+	var a=prompt("Введіть число");
+	var b=prompt("Введіть число");
+	var c=prompt("Введіть число");
+	var Dis=b*b-4*a*c;
+	var x1;
+	var x2;
+	if(Dis>=0){
+	 (x1=(-b+Math.sqrt(Dis))/(2*a))&&(x2=(-b-Math.sqrt(Dis))/(2*a));
+	}else{
+	 alert("Коренів немає");
+	}
+	alert('x1 = ' + x1+" " + '\nx2 = ' +x2);
+	document.write(a+"x<sup>2</sup>+"+b+"x+"+c+"=0");
+}
+equation();
